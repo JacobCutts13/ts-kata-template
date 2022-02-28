@@ -8,3 +8,5 @@ function minToHour(minutes: number): string {
 }
 
 export default minToHour;
+
+
