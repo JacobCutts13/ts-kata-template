@@ -1,10 +1,10 @@
-import minToHour from "./skeleton";
+import secToHour from "./skeleton";
 
-test("minToHours converts total minutes to hours and minutes", () => {
-  expect(minToHour(3600)).toBe("1 hour (s) and 0 minute(s)");
-  expect(minToHour(3601)).toBe("1 hour (s) and 1 minute(s)");
-  expect(minToHour(323500)).toBe("89 hour (s) and 51 minute(s)");
-  expect(minToHour(30)).toBe("0 hour (s) and 30 minute(s)");
+test("secToHours converts total seconds to hours and minutes", () => {
+  expect(secToHour(3600)).toBe("1 hour(s) and 0 minute(s)");
+  expect(secToHour(3601)).toBe("1 hour(s) and 0 minute(s)");
+  expect(secToHour(323500)).toBe("89 hour(s) and 52 minute(s)");
+  expect(secToHour(1800)).toBe("0 hour(s) and 30 minute(s)");
 });
 
 /* Tests

@@ -1,12 +1,15 @@
 /**
  * Adds together two numbers
- * @param minutes - input total minutes
+ * @param seconds - input total seconds
  * @returns string format of minutes and hours
  */
-function minToHour(minutes: number): string {
-  return 'hello'
+function secToHour(seconds: number): string {
+  return (
+    Math.floor(seconds / 3600) +
+    " hour(s) and " +
+    Math.round((seconds % 3600) / 60) +
+    " minute(s)"
+  );
 }
 
-export default minToHour;
-
-
+export default secToHour;
