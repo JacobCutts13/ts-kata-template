@@ -1,11 +1,10 @@
 /**
  * Adds together two numbers
- * @param a - the first number to add
- * @param b - the second number to add
- * @returns the total
+ * @param minutes - input total minutes
+ * @returns string format of minutes and hours
  */
-function sum(a: number, b: number): number {
-  return a + b;
+function minToHour(minutes: number): string {
+  return 'hello'
 }
 
-export default sum;
+export default minToHour;
